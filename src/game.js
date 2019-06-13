@@ -1,5 +1,10 @@
 
 import {startButton} from './dom-loader';
+import {pauseButton} from './dom-loader';
+import {resetButton} from './dom-loader';
+startButton.addEventListener('click', start);
+pauseButton.addEventListener('click', pause);
+resetButton.addEventListener('click', reset );
 
 const canvas = document.querySelector('#gameBoard');
       const ctx = canvas.getContext('2d');
@@ -21,7 +26,7 @@ const canvas = document.querySelector('#gameBoard');
       const snake = [];
 
      
-        startButton.addEventListener('click', start );
+     
      
       function start() {
         let changeSpeed = speed;
