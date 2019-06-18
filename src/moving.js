@@ -109,7 +109,7 @@ export function moveDirection(e) {
             
            
          clearInterval(repeater);
-         repeater = setInterval(game, speed);
+         repeater = setInterval(game, speed*2);
             
             var newBody = { x: X, y: Y };
         } else {
